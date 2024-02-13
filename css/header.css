@@ -1,0 +1,179 @@
+header {
+   width: 1440px;
+   height: 80px;
+   background: #131212;
+   display: flex;
+   align-items: center;
+   padding-left: 175px;
+   z-index: 9999;
+   position: fixed;
+   border-bottom: 1px solid black;
+}
+section{
+   width: auto;
+}
+header .logo {
+   background-image: url(../img/logo.svg);
+   width: 93px;
+   height: 38.15px;
+}
+
+nav ul {
+   display: flex;
+   justify-content: space-between;
+   margin-left: 81px;
+   width: 370px;
+}
+
+.theme {
+   margin-left: 360px;
+   min-width: 185px;
+   height: 20px;
+   display: flex;
+
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+nav li{
+   font-family: "Montserrat Alternates";
+   font-size: 12px;
+   font-weight: 400;
+
+
+}
+.sortGames{
+   min-height: 105px;
+   min-width: 160px;
+   transition: 0.4s;
+   display: flex;
+   flex-flow: column wrap;
+   position: absolute;
+   top: 75px;
+   left: 314px;
+   border-top: none;
+   border-bottom: #000 1px solid;
+   border-right: #000 1px solid;
+   border-left: #000 1px solid;
+   border-radius: 0px 0px 20px 20px;
+}
+.userSpan{
+   cursor: pointer;
+}
+.sortGamesOpen{
+   animation: sortGamesOpen 0.4s linear;
+}
+@keyframes sortGamesOpen {
+   0%{
+      top: 0;
+      opacity: 0;
+   }100%{
+      top: 75px;
+   }
+}
+
+#navBtn3{
+   border-radius:  0px 0px 20px 20px;
+   /* background-color: red; */
+}
+.sortGames button:hover{
+   background-color: #f1f1f1;
+}
+
+.sortGames button:active {
+   background-color: #b9b9b9;
+}
+.sortGames button{
+   font-family: "Montserrat Alternates";
+   font-size: 12px;
+
+   height: 35px;
+   width: 160px;
+
+   cursor: pointer;
+
+   border: none;
+   background-color: #fff;
+}
+
+
+
+.theme p {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   width: 200px;
+   /* padding-top: 36px; */
+}
+.interactive, .ourTeamLi, .Contacts{
+   cursor: pointer;
+   width: auto;
+   height: 80px;
+   display: flex;
+   align-items: center;}
+
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 40px;
+   height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+/* The slider */
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+}
+
+.slider:before {
+   position: absolute;
+   content: url(/img/white.svg);
+   width: 20.5px;
+   height: 20px;
+   /* left: 4px;
+    bottom: 4px; */
+   background-color: white;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+}
+
+input:checked + .slider {
+   background-color: #7a7a7a;
+}
+
+input:focus + .slider {
+   box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+   content: url(/img/dark.svg);
+   -webkit-transform: translateX(20px);
+   -ms-transform: translateX(20px);
+   transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+   border-radius: 34px;
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}
