@@ -95,7 +95,7 @@ startGame.addEventListener(`click`, function () {
   dinoStay.style.opacity = `0`;
   dinoStayEyeClosed.style.opacity = `0`;
 
-  changeDinoRunImage();
+  // changeDinoRunImage();
 });
 function changeDinoImage() {
   if (dinoStay.style.opacity === "1") {
@@ -109,19 +109,7 @@ function changeDinoImage() {
 
 intervalId = setInterval(changeDinoImage, 300);
 
-dinoGame.addEventListener(`click`, function () {
-  // score.style.opacity = `1`;
-  // setInterval(function () {
-  //   scoreGame += 1;
-  //   score.textContent = scoreGame;
-  // }, 100);
-  // dinoRun1.style.opacity = `1`;
-  // runningTrack.style.opacity = `1`;
-  // dino.style.opacity = `1`;
-  // clearInterval(intervalId);
-  // dinoStay.style.opacity = `0`;
-  // dinoStayEyeClosed.style.opacity = `0`;
-});
+dinoGame.addEventListener(`click`, function () {});
 
 function changeDinoRunImage() {
   if (dinoRun1.style.opacity === "1") {
@@ -174,12 +162,12 @@ dinoGame.addEventListener(`click`, function () {
 });
 
 function jump() {
-  if (dino.classList != "jump") {
+  if (!dino.classList.contains("jump")) {
     dino.classList.add("jump");
+    setTimeout(function () {
+      dino.classList.remove("jump");
+    }, 1000);
   }
-  setTimeout(function () {
-    dino.classList.remove("jump");
-  }, 1000);
 }
 
 let isAlive = setInterval(function () {

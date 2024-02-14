@@ -13,6 +13,6 @@ function findLargestNumber() {
 
     resultSpan.textContent = largestNumber;
   } else {
-    resultSpan.textContent = `Найбільше число, яке ви ввели - (число)`;
+    return;
   }
 }
