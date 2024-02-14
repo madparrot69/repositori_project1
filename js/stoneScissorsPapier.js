@@ -35,12 +35,12 @@ stone.addEventListener(`click`, function () {
     cScore.textContent = `Комп’ютер - ${computerScore++}`;
     pScore.textContent = `Ви - ${userScore++}`;
 
-    result.style.color = `green`;
+    result.style.color = `#22E71E`;
     result.textContent = `Нічия! Спробуй ще раз!`;
   } else if (num === 2) {
     pScore.textContent = `Ви - ${userScore++}`;
 
-    result.style.color = `green`;
+    result.style.color = `#22E71E`;
     result.textContent = `Вітаю! Ви виграли раунд!`;
   } else if (num === 3) {
     cScore.textContent = `Комп’ютер - ${computerScore++}`;
@@ -75,13 +75,13 @@ scissors.addEventListener(`click`, function () {
   if (num === 1) {
     pScore.textContent = `Ви - ${userScore++}`;
 
-    result.style.color = `green`;
+    result.style.color = `#22E71E`;
     result.textContent = `Вітаю! Ви виграли раунд!`;
   } else if (num === 2) {
     pScore.textContent = `Ви - ${userScore++}`;
     cScore.textContent = `Комп’ютер - ${computerScore++}`;
 
-    result.style.color = `green`;
+    result.style.color = `#22E71E`;
     result.textContent = `Нічия! Спробуй ще раз!`;
   } else if (num === 3) {
     cScore.textContent = `Комп’ютер - ${computerScore++}`;
@@ -114,7 +114,7 @@ papier.addEventListener(`click`, function () {
   if (num === 1) {
     pScore.textContent = `Ви - ${userScore++}`;
 
-    result.style.color = `green`;
+    result.style.color = `#22E71E`;
     result.textContent = `Вітаю! Ви виграли раунд!`;
   } else if (num === 2) {
     cScore.textContent = `Комп’ютер - ${computerScore++}`;
@@ -125,7 +125,7 @@ papier.addEventListener(`click`, function () {
     pScore.textContent = `Ви - ${userScore++}`;
     cScore.textContent = `Комп’ютер - ${computerScore++}`;
 
-    result.style.color = `green`;
+    result.style.color = `#22E71E`;
     result.textContent = `Нічия! Спробуй ще раз!`;
   }
 });

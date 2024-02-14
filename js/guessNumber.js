@@ -8,7 +8,7 @@ btn.addEventListener(`click`, function () {
   const val1 = +num.value;
 
   if (val1 === num2) {
-    result.style.color = `green`;
+    result.style.color = `#22E71E`;
     result.textContent = `Вітаю, ви вгадали число! (${num2})`;
   } else {
     result.style.color = `red`;

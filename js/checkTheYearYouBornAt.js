@@ -7,7 +7,7 @@ btn.addEventListener(`click`, function () {
 
   if (val > 0) {
     if (val % 4 === 0) {
-      result.style.color = `green`;
+      result.style.color = `#22E71E`;
       result.textContent = `Ви народилися у високосний рік!`;
     } else {
       result.style.color = `red`;

@@ -1,90 +1,102 @@
 footer {
-   width: 1440px;
-   height: 220px;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   background: #ffffff;
+  width: 1440px;
+  height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  border-top: #000 1px solid;
 }
 
 .footer-logo {
-   width: 165px;
-   height: 70px;
-   background-image: url(../img/logo.svg);
-   background-repeat: no-repeat;
-   background-size: cover;
+  width: 165px;
+  height: 70px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-info {
-   font-family: "Montserrat Alternates";
-   font-style: normal;
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 170%;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
 }
 
 .form-subscribe {
-   width: 347px;
-   height: 60px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
+  width: 347px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-footer form {
-   width: 347px;
-   height: 35px;
-   display: flex;
-   justify-content: space-between;
+footer .form {
+  width: 347px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-subscribe input {
-   width: 204px;
-   height: 35px;
-   padding: 10px;
+  width: 204px;
+  height: 35px;
+  padding: 10px;
 
-   background: #d7d7d7;
-   border-radius: 20px;
-   border: none;
+  background: #d7d7d7;
+  border-radius: 20px;
+  border: none;
 }
 
 .form-subscribe input::placeholder,
 .form-subscribe input {
-   font-family: "Montserrat Alternates";
-   font-style: normal;
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 15px;
-   color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #7e7e7e;
 }
 
 .form-subscribe button {
-   width: 107px;
-   height: 35px;
-   background: #000000;
-   border-radius: 20px;
-   color: white;
-   font-family: "Montserrat Alternates";
-   font-style: normal;
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 15px;
+  width: 107px;
+  height: 35px;
+  color: white;
+  font-family: "Montserrat Alternates";
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  text-align: center;
+
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2);
+  line-height: 15px;
 }
 
 .form-info {
-   font-family: "Montserrat Alternates";
-   font-style: normal;
-   font-weight: 400;
-   font-size: 6px;
-   line-height: 7px;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7px;
 }
 
 .dark {
-   background: #424242;
-   color: white;
+  background: #424242;
+  color: white;
 }
 
 .white {
-   background: #ffffff;
-   color: black;
+  background: #ffffff;
+  color: black;
 }

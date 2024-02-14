@@ -32,13 +32,13 @@
     <!-- modal-window -->
     <div class="modalBox1">
       <div class="modalWindow">
-        <button class="closeModalWindow">
+        <div class="closeModalWindow">
           <img
             src="./img/icon/iconClose.svg"
             alt=""
             class="closeModalWindowImg"
           />
-        </button>
+        </div>
         <div class="modalWindowFunction">
           <li style="list-style-type: none" class="modalWindowHelloTextLi">
             <p class="modalWindowHelloText1">Привіт!</p>
@@ -59,23 +59,43 @@
             <button class="modalWindowSaveName">Зберегти</button>
           </div>
         </div>
-        <img src="./img/icon/iconSword.svg" alt="" class="modalWindowSvg1" />
-        <img src="./img/icon/iconPuzzle.svg" alt="" class="modalWindowSvg2" />
-        <img src="./img/icon/iconBar.svg" alt="" class="modalWindowSvg3" />
-        <img src="./img/icon/iconGameBar.svg" alt="" class="modalWindowSvg4" />
+        <img
+          src="./img/icon/iconSword.svg"
+          alt=""
+          class="gameIcons"
+          id="gameIcons1"
+        />
+        <img
+          src="./img/icon/iconPuzzle.svg"
+          alt=""
+          class="gameIcons"
+          id="gameIcons2"
+        />
+        <img
+          src="./img/icon/iconGameBar.svg"
+          alt=""
+          class="gameIcons"
+          id="gameIcons3"
+        />
+        <img
+          src="./img/icon/iconTicTacToe.svg"
+          alt=""
+          class="gameIcons"
+          id="gameIcons4"
+        />
       </div>
     </div>
 
     <!-- modal-thank-you-window -->
     <div class="modalBox2">
       <div class="modalThankYouWindow">
-        <button class="closeModalThankYouWindow">
+        <div class="closeModalThankYouWindow">
           <img
             src="./img/icon/iconClose.svg"
             alt=""
-            class="modalThankYouWindowImg"
+            class="closeModalWindowImg"
           />
-        </button>
+        </div>
         <div class="modalThankYouWindowDiv">
           <h5 class="thankYou">Дякую за підписку!</h5>
 
@@ -108,6 +128,11 @@
           <li class="Contacts">Контакти</li>
         </ul>
       </nav>
+      <div class="sortGames">
+        <div class="sortGamesBtns" id="navBtn1">Числовий</div>
+        <div class="sortGamesBtns" id="navBtn2">Ігровий</div>
+        <div class="sortGamesBtns" id="navBtn3">Ознайомчий</div>
+      </div>
 
       <div class="theme">
         <label class="switch">
@@ -123,11 +148,7 @@
         <!-- tytle -->
         <h1 class="titleName">Популярні інетрактивні ігри</h1>
         <div class="hr0"></div>
-        <div class="sortGames">
-          <button id="navBtn1">Числовий</button>
-          <button id="navBtn2">Ігровий</button>
-          <button id="navBtn3">Ознайомчий</button>
-        </div>
+
         <!-- 1 -->
 
         <div class="checkTheYearYouBornAt">
@@ -179,13 +200,17 @@
             <div class="stoneScissorsPapierGameDiv">
               <div class="stoneScissorsPapierBtnDiv">
                 <button class="stoneBtn">
-                  <img src="./img/icon/rock.png" alt="" />
+                  <img src="./img/icon/rock.png" alt="" class="stoneImg" />
                 </button>
                 <button class="scrissorsBtn">
-                  <img src="./img/icon/paper.png" alt="" />
+                  <img src="./img/icon/paper.png" alt="" class="scrissorsImg" />
                 </button>
                 <button class="papierBtn">
-                  <img src="./img/icon/scissors.png" alt="" />
+                  <img
+                    src="./img/icon/scissors.png "
+                    alt=""
+                    class="papierImg"
+                  />
                 </button>
               </div>
               <p class="stoneScissorsPapierResult">Результати раунду.</p>
@@ -372,16 +397,16 @@
           <h3 class="portfolioName">Наша команда</h3>
           <div class="portfolioFunctions">
             <div class="portfolioDiv">
-              <button class="portfoliobtn1">
-                <img src="./img/arrowLeft.svg" alt="" />
-              </button>
+              <div id="portfoliobtn1" class="portfoliobtn">
+                <img src="./img/arrowLeft.svg" id="portfoliobtnL" alt="" />
+              </div>
               <div class="portfolioCardDiv">
                 <img src="./img/icon/spotify.png" class="spotify" />
                 <img src="./img/icon/khrystyna.png" class="khrystyna" alt="" />
               </div>
-              <button class="portfoliobtn2">
-                <img src="./img/arrowRight.svg" alt="" />
-              </button>
+              <div id="portfoliobtn2" class="portfoliobtn">
+                <img src="./img/arrowRight.svg" id="portfoliobtnR" alt="" />
+              </div>
             </div>
             <h4 class="portfolioTeammates">Христина Степенко</h4>
             <p class="portfolioWorkReport">
@@ -400,12 +425,7 @@
         <div class="chooseTheScientist">
           <h3 class="chooseTheScientistName">Обери вченого/их</h3>
           <div class="chooseTheScientistDiv">
-            <div class="chooseTheScientistImg">
-              <div class="chooseTheScientistImgGroupDiv">
-                <div class="youngest"></div>
-                <div class="oldest"></div>
-              </div>
-            </div>
+            <div class="chooseTheScientistImg"></div>
             <div class="chooseTheScientistQuestions">
               <div class="questions1">
                 <button class="q1">Які вчені народилися в 19 ст.</button>

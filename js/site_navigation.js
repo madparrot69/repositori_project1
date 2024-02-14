@@ -30,6 +30,7 @@ let navBtn1 = document.getElementById(`navBtn1`);
 let navBtn2 = document.getElementById(`navBtn2`);
 let navBtn3 = document.getElementById(`navBtn3`);
 const title = document.querySelector(`.titleName`);
+
 sortGames.classList.add("opacity");
 
 interactive.addEventListener("mouseenter", function () {
@@ -43,7 +44,7 @@ let timeoutId;
     timeoutId = setTimeout(function () {
       sortGames.classList.remove("sortGamesOpen");
       sortGames.classList.add("opacity");
-    }, 500);
+    }, 100);
   });
   element.addEventListener("mouseenter", function () {
     clearTimeout(timeoutId);
@@ -59,6 +60,10 @@ ourTeam.addEventListener(`click`, function () {
 });
 logo.addEventListener(`click`, function () {
   title.textContent = `Популярні інетрактивні ігри`;
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
   stoneScissorsPapier.classList.remove("opacity");
   hr3.classList.remove("opacity");
@@ -83,7 +88,10 @@ logo.addEventListener(`click`, function () {
 
 navBtn1.addEventListener(`click`, function () {
   title.textContent = `Числові ігри`;
-
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
   stoneScissorsPapier.classList.add("opacity");
   hr3.classList.add("opacity");
   dinoTask.classList.add("opacity");
@@ -111,6 +119,10 @@ navBtn1.addEventListener(`click`, function () {
 
 navBtn2.addEventListener(`click`, function () {
   title.textContent = `Розважальні ігри`;
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
   checkTheYearYouBornAt.classList.add("opacity");
   hr1.classList.add("opacity");
@@ -139,6 +151,10 @@ navBtn2.addEventListener(`click`, function () {
 
 navBtn3.addEventListener(`click`, function () {
   title.textContent = `Ознайомчі ігри`;
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
   stoneScissorsPapier.classList.add("opacity");
   hr3.classList.add("opacity");
@@ -161,6 +177,6 @@ navBtn3.addEventListener(`click`, function () {
   hr9.classList.remove("opacity");
   chooseTheScientist.classList.remove("opacity");
 
-  main.style.height = `auto`;
-  section.style.height = `auto`;
+  main.style.height = `1400px`;
+  section.style.height = `1400px`;
 });

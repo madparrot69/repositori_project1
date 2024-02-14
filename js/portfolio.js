@@ -1,5 +1,5 @@
-const btnL = document.querySelector(`.portfoliobtn1`);
-const btnR = document.querySelector(`.portfoliobtn2`);
+const btnL = document.getElementById(`portfoliobtn1`);
+const btnR = document.getElementById(`portfoliobtn2`);
 
 const me = document.querySelector(`.khrystyna`);
 const spotify = document.querySelector(`.spotify`);
